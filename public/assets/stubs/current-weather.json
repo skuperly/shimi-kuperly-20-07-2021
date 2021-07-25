@@ -1,0 +1,25 @@
+[
+    {
+        "LocalObservationDateTime": "2021-07-23T06:10:00-03:00",
+        "EpochTime": 1627031400,
+        "WeatherText": "Mostly clear",
+        "WeatherIcon": 34,
+        "HasPrecipitation": false,
+        "PrecipitationType": null,
+        "IsDayTime": false,
+        "Temperature": {
+            "Metric": {
+                "Value": 15.6,
+                "Unit": "C",
+                "UnitType": 17
+            },
+            "Imperial": {
+                "Value": 60.0,
+                "Unit": "F",
+                "UnitType": 18
+            }
+        },
+        "MobileLink": "http://www.accuweather.com/en/br/rio-de-janeiro/45449/current-weather/45449?lang=en-us",
+        "Link": "http://www.accuweather.com/en/br/rio-de-janeiro/45449/current-weather/45449?lang=en-us"
+    }
+]
