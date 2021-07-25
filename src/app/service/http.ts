@@ -3,7 +3,7 @@ import axios from "axios";
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 export const http = axios.create({
-  // baseURL: process.env.REACT_APP_API_BASE_ENDPOINT,
+  baseURL: process.env.REACT_APP_API_BASE_ENDPOINT,
 });
 
 export const getLoacation = (searchTerm: string) => {
