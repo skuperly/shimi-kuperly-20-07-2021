@@ -4,10 +4,6 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 export const http = axios.create({
   baseURL: process.env.REACT_APP_API_BASE_ENDPOINT,
-  headers: {
-    "Access-Control-Allow-Origin": "*",
-    "Content-Type": "application/json",
-  },
 });
 
 export const getLoacation = (searchTerm: string) => {
