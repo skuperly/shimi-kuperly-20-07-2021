@@ -59,11 +59,12 @@ export const Favorites = () => {
             </Typography>
           </Grid>
           {favorites.map((fav) => (
-            <Grid item xs={12} md={4} key={fav.ID}>
+            <Grid item xs={12} md={2} key={fav.ID}>
               <WeatherCard
                 weather={{
                   name: fav.name,
                   key: fav.ID,
+                  weatherText: fav.currentWeather.weatherText,
                   weatherIcon: fav.currentWeather.weatherIcon,
                   temperature: {
                     max: {

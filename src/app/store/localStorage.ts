@@ -14,7 +14,11 @@ export const loadState = () => {
 
 export const saveState = (state: RootState) => {
   try {
-    const serializedState = JSON.stringify(state);
+    const partialState = {
+      theme: state.theme,
+      weather: { favorites: state.weather.favorites },
+    };
+    const serializedState = JSON.stringify(partialState);
     localStorage.setItem("state", serializedState);
   } catch {
     // ignore write errors

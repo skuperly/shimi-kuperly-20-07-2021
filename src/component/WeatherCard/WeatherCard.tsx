@@ -60,6 +60,9 @@ export const WeatherCard = ({
             alt="weather"
             src={`/assets/icons/${weather.weatherIcon}.png`}
           />
+          <Typography align="center" variant="body1">
+            {weather.weatherText && weather.weatherText}
+          </Typography>
           <Typography align="center" variant="h6">
             {!!weather.temperature.min &&
               `${tempConvert(

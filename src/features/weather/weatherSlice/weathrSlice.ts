@@ -17,7 +17,7 @@ import {
 const initialState: IWeatherState = {
   loading: false,
   error: "",
-  currentCity: { name: "Tel Aviv", key: "215854" },
+  currentCity: { name: "", key: "" },
   favorites: [],
 };
 
@@ -177,7 +177,7 @@ export const updateFavorites = (): AppThunk => async (dispatch, getState) => {
   }
 };
 
-export const setDefaultLocation = (): AppThunk => (dispatch, getState) => {
+export const setDefaultLocation = (): AppThunk => (dispatch) => {
   if ("geolocation" in navigator) {
     const successCb = (position: GeolocationPosition) => {
       getGeoLoacation({

@@ -5,6 +5,7 @@ export interface IDaylyWeather {
   date?: string;
   name?: string;
   key?: string;
+  weatherText?: string;
   weatherIcon: number;
   temperature: {
     min?: { value: number; unit: ETemprature };
